@@ -7,4 +7,3 @@ Imagine you are a proficient TypeScript developer and documentation expert, reno
 
 Please walk me through how to set up a new TypeScript project using Node.js with a configured eslint and tsconfig.
 ```
-
