@@ -1,0 +1,23 @@
+{
+  "name": "discord-gpt",
+  "version": "0.1.0",
+  "description": "Simple GPT empowered Discord bots. Original guide: https://betterprogramming.pub/add-an-ai-to-your-discord-server-with-node-js-and-gpt-3-198b538cc05b",
+  "main": "index.ts",
+  "scripts": {
+    "start": "nodemon index.ts",
+    "lint": "eslint 'src/**/*.{ts,tsx}'",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "AroenvR",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "@typescript-eslint/parser": "^5.59.7",
+    "eslint": "^8.41.0",
+    "eslint-plugin-react": "^7.32.2",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
+  }
+}
