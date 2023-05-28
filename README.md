@@ -11,7 +11,7 @@ Before you begin, ensure you have Node.js and npm installed on your machine.
 ## Installing
 Clone the repository to your local machine:
 ```
-git clone [<repository-url>](https://github.com/AroenvR/es-ts-template)
+git clone https://github.com/AroenvR/es-ts-template
 ```
 Navigate into the directory:
 ```
@@ -21,7 +21,7 @@ Install the dependencies:
 ```
 npm i
 ```
-
+### Rename example.env to .env
 ## Running the application
 To run the application:
 ```
