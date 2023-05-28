@@ -1,43 +1,54 @@
-# discord-gpt
-### Simple GPT empowered Discord bots.  
-Original guide: https://betterprogramming.pub/add-an-ai-to-your-discord-server-with-node-js-and-gpt-3-198b538cc05b
+# TypeScript Project Template
+This project is a pre-configured template for Node.js applications using TypeScript.
 
-# Discord setup:
-## Log in to Discord and create a server
-You have to own the server or know someone with the rights to add the bot account in a later step.  
-You can create a new server by clicking the “+” icon in the left side servers menu.
+## Getting Started
+Before you begin, ensure you have Node.js and npm installed on your machine.
 
-## Create a Discord Bot
-- Go to https://discord.com/developers/applications  
-  Click on the “New Application” button on the top right to create a new application.
-- Give the application a name.
-- (Optional) give it a description.
-- (Optional) add an image.
-- Copy the **APPLICATION ID** and paste it into your .env file (example.env by default, rename it to .env if you haven't already).
-- Save Changes.
+## Prerequisites
+- Node.js 14.x or later
+- npm 6.x or later
 
-## Navigate to the "OAuth2 > URL Generator" tab.
-You can enable any scope you feel like, but you must enable at least the following:
-- bot
-- Send Messages
-- Read Messages/View Channels
-- Scroll to the bottom and copy the "GENERATED URL".  
-(It will look similar to this: https://discord.com/api/oauth2/authorize?client_id=CLIENT_ID&permissions=3072&scope=bot)
+## Installing
+Clone the repository to your local machine:
+```
+git clone [<repository-url>](https://github.com/AroenvR/es-ts-template)
+```
+Navigate into the directory:
+```
+cd es-ts-template
+```
+Install the dependencies:
+```
+npm i
+```
 
-## Navigate to the "OAuth2 > General" tab.
-- At the bottom "Default Authorization Link" select the **Custom URL** Authorization Method.
-- Paste your generated URL from the previous tab.
-- Save Changes.
+## Running the application
+To run the application:
+```
+npm start
+```
 
-## Navigate to the "Bot" tab.
-- Click "Reset Token".
-- Agree.
-- Copy and paste the new token into your .env file.
-- (Optional) change the bot's username.
-- Scroll down and enable "MESSAGE CONTENT INTENT".
-- Save changes.
+## Features
+- Preconfigured TypeScript for static typing in JavaScript
+- ESLint for linting, with a custom configuration
+- Nodemon for automatically restarting your application when file changes are detected
+- Basic structure for a Node.js project
 
-## Wrapping up Discord
-Copy and paste your Custom URL generated earlier into the browser.  
-You'll be prompted to invite your newly created bot into a server (assuming you are in, or have, a server with the necessary privileges).  
-Authorize the bot to join your server.
+## Project Structure
+- `src/`: The source files of the application
+- `dist/`: The transpiled code that is used for production
+- `node_modules/`: The installed npm dependencies (do not modify)
+- `tsconfig.json`: The TypeScript compiler options
+- `.eslintrc.json`: ESLint rules
+- `.eslintignore`: Files to be ignored by ESLint
+- `package.json`: npm package manager file, lists project information and dependencies
+- `nodemon.json`: Nodemon configuration file
+
+## Built With
+- [Node.js](https://nodejs.org/) - JavaScript runtime
+- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
+- [ESLint](https://eslint.org/) - Linter for JavaScript and TypeScript
+- [Nodemon](https://nodemon.io/) - Utility to automatically restart node applications
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details
