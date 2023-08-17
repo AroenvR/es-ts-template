@@ -28,6 +28,11 @@ To run the application:
 npm start
 ```
 
+To run the application's tests:
+```
+npm run test
+```
+
 ## Features
 - Preconfigured TypeScript for static typing in JavaScript
 - ESLint for linting, with a custom configuration
@@ -36,6 +41,7 @@ npm start
 
 ## Project Structure
 - `src/`: The source files of the application
+- `src/__tests__/`: The testing directory
 - `dist/`: The transpiled code that is used for production
 - `node_modules/`: The installed npm dependencies (do not modify)
 - `tsconfig.json`: The TypeScript compiler options
