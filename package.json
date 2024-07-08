@@ -5,9 +5,9 @@
   "main": "index.ts",
   "scripts": {
     "start": "nodemon index.ts",
-    "test": "jest",
-    "test:watch": "jest --watchAll",
-    "test:coverage": "jest --coverage",
+    "test": "npm run lint; jest --runInBand",
+    "test:watch": "npm run lint; jest --runInBand --watchAll",
+    "test:coverage": "npm run lint; jest --runInBand --coverage",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "build": "tsc"
   },
@@ -15,7 +15,9 @@
   "author": "AroenvR",
   "license": "MIT",
   "dependencies": {
+    "@types/fs-extra": "^11.0.4",
     "dotenv": "^16.0.3",
+    "fs-extra": "^11.2.0",
     "ts-istruthy": "^1.0.2",
     "ts-node": "^10.9.1"
   },
@@ -27,7 +29,7 @@
     "eslint": "^8.41.0",
     "eslint-plugin-react": "^7.32.2",
     "jest": "^29.6.2",
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.1.4",
     "ts-jest": "^29.1.1",
     "typescript": "^5.0.4"
   }
