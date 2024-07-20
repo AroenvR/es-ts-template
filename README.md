@@ -1,5 +1,7 @@
-# TypeScript Project Template
-This project is a pre-configured template for Node.js applications using TypeScript.
+# TypeScript Project Template - with Inversify IoC / DI
+This project is a pre-configured template for Node.js applications using TypeScript.  
+This branch's template has included a configured inversion of control container to enable dependency injection.  
+Check out the [ContainerDecorator](src/ioc/ContainerDecorator.ts) for how to use it.
 
 ## Getting Started
 Before you begin, ensure you have Node.js and npm installed on your machine.
@@ -28,7 +30,7 @@ To run the application:
 npm start
 ```
 
-To run the application's tests:
+To run the application's tests, ensure you have a .env.test file and execute:
 ```
 npm run test
 ```
