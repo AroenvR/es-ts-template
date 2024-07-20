@@ -4,7 +4,7 @@
   "description": "Simple ESLint and TypeScript template.",
   "main": "index.ts",
   "scripts": {
-    "start": "nodemon index.ts",
+    "start": "nodemon --exec ts-node ./src/index.ts",
     "test": "npm run lint; jest --runInBand",
     "test:watch": "npm run lint; jest --runInBand --watchAll",
     "test:coverage": "npm run lint; jest --runInBand --coverage",
