@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "esnext",
+    "module": "CommonJS",
     "lib": [
       "es6"
     ],
@@ -11,8 +11,8 @@
     ],
     "allowJs": true,
     "jsx": "react",
-    "rootDir": "src",
-    "outDir": "dist",
+    "rootDir": "./src",
+    "outDir": "./dist",
     "composite": true,
     "strict": true,
     "noImplicitAny": true,
@@ -30,10 +30,11 @@
     "sourceMap": true
   },
   "include": [
-    "src/**/*.ts",
+    "src/**/*",
   ],
   "exclude": [
     "node_modules",
+    "**/*.test.ts",
     "dist/**/*"
   ]
 }

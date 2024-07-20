@@ -47,6 +47,11 @@ export class ContainerDecorator implements IContainerDecorator {
      * 
      */
     public initContainer(): void {
+        const timer = performance.now();
+        console.log(`${this.name}: Initializing the container...`);
+
         // this.container.bind<IServerConfig>(TYPES.IServerConfig).toConstantValue(this.config);
+
+        console.info(`${this.name}: Container initialized in ${performance.now() - timer}ms`);
     }
 }
