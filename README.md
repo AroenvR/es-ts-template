@@ -43,8 +43,13 @@ npm run test
 - `src/`: The source files of the application
 - `src/__tests__/`: The testing directory
 - `dist/`: The transpiled code that is used for production
+- `coverage/`: A detailed testing coverage report
 - `node_modules/`: The installed npm dependencies (do not modify)
 - `tsconfig.json`: The TypeScript compiler options
+ `.gitignore`: An index of files & directories which git should ignore
+- `.npmignore`: An index of files & directories which npm should ignore when publishing a package
+- `.prettierrc`: A `prettier` configuration file for formatting code with the `npm run format` script
+- `jest.config.js`: A configuration file for the `jest` testing library
 - `.eslintrc.json`: ESLint rules
 - `.eslintignore`: Files to be ignored by ESLint
 - `package.json`: npm package manager file, lists project information and dependencies
@@ -55,6 +60,12 @@ npm run test
 - [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
 - [ESLint](https://eslint.org/) - Linter for JavaScript and TypeScript
 - [Nodemon](https://nodemon.io/) - Utility to automatically restart node applications
+
+## Publishing an NPM package
+1. Execute `npm link`
+2. Execute `npm link PACKAGE_NAME`
+3. Execute `npm login`
+4. Execute `npm publish` with an optional `--access public` flag.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details
